@@ -4,6 +4,9 @@ apt-get update
 apt-get install -y build-essential software-properties-common curl git man-db python perl vim wget zsh openssh-server python-dev ctags cloc tree sudo locales
 
 # locale
+echo "LC_ALL=en_US.UTF-8" >> /etc/environment
+echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen
+echo "LANG=en_US.UTF-8" > /etc/locale.conf
 locale-gen en_US.UTF-8
 
 # tmux
