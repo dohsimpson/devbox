@@ -34,3 +34,5 @@ chmod u+x ~/.z.sh
 chsh -s `which zsh`
 
 curl https://raw.githubusercontent.com/dohsimpson/dotfiles/master/setup.sh | bash
+
+rm ~/setup.sh
