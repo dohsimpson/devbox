@@ -22,4 +22,8 @@ curl "https://bootstrap.pypa.io/get-pip.py" | python3
 
 pip3 install pipenv
 
+curl "https://raw.githubusercontent.com/rupa/z/master/z.sh" > ~/.z.sh
+chmod u+x ~/.z.sh
+
+
 curl https://raw.githubusercontent.com/dohsimpson/dotfiles/master/setup.sh | bash
