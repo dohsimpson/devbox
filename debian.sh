@@ -1,3 +1,9 @@
+if [ `whoami` != 'root' ]
+  then
+    echo "Must run as root"
+    exit
+fi
+
 cat /etc/os-release | grep '^NAME='
 
 apt-get update
@@ -25,5 +31,6 @@ pip3 install pipenv
 curl "https://raw.githubusercontent.com/rupa/z/master/z.sh" > ~/.z.sh
 chmod u+x ~/.z.sh
 
+chsh -s `which zsh`
 
 curl https://raw.githubusercontent.com/dohsimpson/dotfiles/master/setup.sh | bash
