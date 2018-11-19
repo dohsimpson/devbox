@@ -18,6 +18,11 @@ locale-gen en_US.UTF-8
 # tmux
 curl https://gist.githubusercontent.com/dohsimpson/0285d12fb12a633e2cc9e6f36a83a2fb/raw/c46669f1ed668526bbb71d97efa9eba4f9860212/tmux-install-2-5.sh | bash
 
+# vim
+sudo add-apt-repository ppa:jonathonf/vim
+sudo apt update
+sudo apt install vim
+
 # ssh
 service ssh start
 mkdir -p ~/.ssh
@@ -27,6 +32,8 @@ cat /tmp/*.pub >> ~/.ssh/authorized_keys
 curl "https://bootstrap.pypa.io/get-pip.py" | python3
 
 pip3 install pipenv
+# DEV TOOLS
+pip3 install prospector autopep8
 
 curl "https://raw.githubusercontent.com/rupa/z/master/z.sh" > ~/.z.sh
 chmod u+x ~/.z.sh
