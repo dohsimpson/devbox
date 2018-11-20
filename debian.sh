@@ -20,8 +20,8 @@ curl https://gist.githubusercontent.com/dohsimpson/0285d12fb12a633e2cc9e6f36a83a
 
 # vim
 sudo add-apt-repository ppa:jonathonf/vim
-sudo apt update
-sudo apt install vim
+sudo apt-get update
+sudo apt-get install vim
 
 # ssh
 service ssh start
