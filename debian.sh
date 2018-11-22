@@ -36,8 +36,13 @@ pip3 install pipenv
 # DEV TOOLS
 pip3 install prospector autopep8 jedi
 
+# z
 curl "https://raw.githubusercontent.com/rupa/z/master/z.sh" > ~/.z.sh
 chmod u+x ~/.z.sh
+
+# rg
+curl -L https://github.com/BurntSushi/ripgrep/releases/download/0.10.0/ripgrep_0.10.0_amd64.deb > /tmp/ripgrep_0.10.0_amd64.deb
+dpkg -i /tmp/ripgrep_0.10.0_amd64.deb
 
 chsh -s `which zsh`
 
