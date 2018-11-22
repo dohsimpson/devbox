@@ -7,7 +7,8 @@ fi
 cat /etc/os-release | grep '^NAME='
 
 apt-get update
-apt-get install -y build-essential software-properties-common curl git man-db python perl vim wget zsh openssh-server python-dev ctags cloc tree sudo locales python3
+apt-get install -y build-essential software-properties-common curl git man-db python perl vim wget zsh python-dev ctags cloc tree sudo locales python3 net-tools
+[ command -v openssh-server >/dev/null ] || apt-get install openssh-server
 
 # locale
 echo "LC_ALL=en_US.UTF-8" >> /etc/environment
