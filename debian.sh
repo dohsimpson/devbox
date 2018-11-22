@@ -34,7 +34,7 @@ curl "https://bootstrap.pypa.io/get-pip.py" | python3
 
 pip3 install pipenv
 # DEV TOOLS
-pip3 install prospector autopep8
+pip3 install prospector autopep8 jedi
 
 curl "https://raw.githubusercontent.com/rupa/z/master/z.sh" > ~/.z.sh
 chmod u+x ~/.z.sh
